@@ -1,0 +1,164 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* Layout */
+
+main {
+  display: flex;
+}
+
+aside {
+  min-width: max-content;
+}
+
+main section {
+  max-width: 900px;
+  padding-left: 5vw;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+html {
+  font-family: "Texturina", serif;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+
+h1,
+h2 {
+  font-family: "Saira", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h2 + p {
+  text-indent: 2rem;
+}
+
+main a:link,
+main a:visited,
+main a:focus,
+main a:hover {
+  color: #a66;
+  outline: none;
+}
+
+main a:focus,
+main a:hover {
+  text-decoration: none;
+}
+
+main a:active {
+  color: #844;
+}
+
+main a[href^="http"] {
+  padding-right: 1.2em;
+  background: url(open_in_new_black_24dp.svg) no-repeat right 0.5em;
+  background-size: 1em;
+}
+
+main ul,
+main ol,
+main p {
+  margin-top: 1em;
+}
+
+main ol {
+  list-style-type: lower-alpha;
+  list-style-position: outside;
+  padding-left: 1.1em;
+}
+
+main ol li {
+  padding-left: 0.7em;
+}
+
+main ul {
+  list-style-type: "❖";
+  list-style-position: outside;
+  padding-left: 0.8em;
+}
+
+main ul li {
+  padding-left: 1em;
+}
+
+main ul li::marker {
+  color: #50a;
+}
+/* 
+main ul a,
+main ul span {
+  padding-left: 0.5em;
+} */
+
+main ol a {
+  padding-left: 0.2em;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  font-size: 1.4em;
+  text-decoration: none;
+  outline: none;
+  line-height: 1;
+  color: #a66;
+}
+
+nav a:hover,
+nav a:focus {
+  text-shadow: 1.5px 1.5px 1px #87cefa;
+}
+
+nav a:active {
+  color: #844;
+  text-shadow: 2px 0.5px 1px #23a5f6;
+}
+
+aside h2 {
+  font-weight: 500;
+}

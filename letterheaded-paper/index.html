@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Fancy letterheaded paper</title>
+    <link rel="stylesheet" href="base-style.css" />
+    <style>
+      article {
+        background: top / contain no-repeat url(top-image.png);
+        background: top / contain no-repeat url(top-image.png),
+          bottom / contain no-repeat url(bottom-image.png),
+          linear-gradient(
+            hsla(0, 0%, 0%, 0.3),
+            hsla(0, 0%, 0%, 0) 20%,
+            hsla(0, 0%, 0%, 0) 80%,
+            hsla(0, 0%, 0%, 0.3)
+          );
+        border-top: 1mm solid black;
+        border-bottom: 1mm solid black;
+      }
+      h1 {
+        background-image: url(logo.png);
+        border-radius: 50%;
+        box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.5);
+      }
+      body {
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Awesome<br />Company</h1>
+
+      <address>
+        <p>The Awesome Company</p>
+        <p>
+          102-112 Frail Bend Bridge<br />
+          The Dwindlings<br />
+          Little Hornet<br />
+          HX3 9ZQ<br />
+          UK
+        </p>
+      </address>
+    </article>
+  </body>
+</html>

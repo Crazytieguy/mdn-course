@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cool box</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        font-family: sans-serif;
+      }
+      p {
+        width: 200px;
+        padding: 1em;
+        text-align: center;
+        font-size: 1.2rem;
+        background-color: cyan;
+        color: cyan;
+        text-shadow: 1px 1px 2px black;
+        border-radius: 1em;
+        border: 1px solid darkviolet;
+        background-image: linear-gradient(
+          to bottom right,
+          hsla(0, 0%, 0%, 0),
+          hsla(0, 0%, 0%, 0.2) 30%
+        );
+        box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.5),
+          inset 3px 3px 3px hsla(0, 0%, 100%, 0.7),
+          inset -3px -3px 3px hsla(0, 0%, 0%, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is a cool box</p>
+  </body>
+</html>

@@ -56,6 +56,7 @@ body {
 h1,
 h2 {
   font-family: "Saira", sans-serif;
+  font-weight: 600;
   letter-spacing: 1px;
   line-height: 1;
   text-align: center;
@@ -157,8 +158,4 @@ nav a:focus {
 nav a:active {
   color: #844;
   text-shadow: 2px 0.5px 1px #23a5f6;
-}
-
-aside h2 {
-  font-weight: 500;
 }

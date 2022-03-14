@@ -62,7 +62,7 @@ main article {
 
 .cards li {
   border: 5px solid #000;
-  margin-bottom: 1em;
+  margin: 0.5em;
   max-width: 20rem;
   flex: 15rem 1;
 }

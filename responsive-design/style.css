@@ -3,7 +3,8 @@
 }
 
 html {
-  font: 1.2em/1.4 Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
 }
 
 body {
@@ -29,6 +30,11 @@ header {
   display: block;
   padding: 1em;
   border-top: 1px solid #999;
+  font-weight: bold;
+}
+
+.header-content :is(a:hover, a:focus) {
+  color: hsla(128, 80%, 80%);
 }
 
 .title {
@@ -84,7 +90,7 @@ main {
   margin: 0 auto;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 35rem) {
   .header-content {
     display: flex;
     justify-content: space-between;
@@ -104,7 +110,7 @@ main {
   }
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 48rem) {
   main {
     display: flex;
     justify-content: space-between;

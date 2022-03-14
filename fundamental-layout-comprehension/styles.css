@@ -2,7 +2,7 @@ body {
   background-color: #fff;
   color: #333;
   margin: 0;
-  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  font: 1.1em / 1.4 Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -17,6 +17,10 @@ img {
   max-width: 980px;
 }
 
+aside h2 {
+  text-align: center;
+}
+
 .grid {
   margin: 0 auto;
   padding: 0 20px;
@@ -24,28 +28,69 @@ img {
 }
 
 nav {
-  background-color: #000;
+  background-color: #000d;
   padding: 0.5em;
 }
 
-nav ul {
-  margin: 0;
+.primary-nav {
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  line-height: 2;
+  max-width: 980px;
 }
 
-nav a {
+.primary-nav a {
   color: #fff;
   text-decoration: none;
   padding: 0.5em 1em;
+  font-size: 1.1em;
+}
+
+@media (min-width: 35em) {
+  .primary-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media (min-width: 40em) {
+  .grid {
+    display: flex;
+    gap: 2em;
+  }
+
+  .grid article {
+    flex: 25em 1;
+  }
+
+  .grid aside {
+    flex: 15em 1;
+  }
 }
 
 .photos {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+  place-items: center;
+  gap: 2px;
+}
+
+.photos li {
+  max-width: 15em;
 }
 
 .feature {
-  width: 200px;
+  width: 50%;
+  max-width: 200px;
+  float: left;
+  margin-right: 1em;
 }

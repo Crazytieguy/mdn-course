@@ -4,17 +4,23 @@ html {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3em;
+  font-size: clamp(2.5em, calc(2em + 1.5vw), 3.5em);
+  padding: 1em 0;
+  margin: 0 8vw;
 }
 
 ul {
   list-style-type: none;
-  padding-left: 2rem;
+  padding: 1em 0;
+  margin: 0 8vw;
 }
 
 a {
   color: brown;
-  font-size: 2rem;
+  font-size: 2em;
+  font-size: clamp(1.5em, calc(1em + 1vw), 2em);
+  line-height: 2;
 }
 
 a:hover,
